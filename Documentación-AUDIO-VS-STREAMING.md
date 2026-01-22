@@ -22,8 +22,6 @@
 
 ### INTRODUCCIÓN
 
-## Introducción
-
 El consumo de contenidos multimedia a través de Internet se ha convertido en una parte esencial de la comunicación digital actual. Servicios como la **radio online**, **las plataformas de vídeo bajo demanda** o **las retransmisiones en directo** dependen de tecnologías de **streaming** capaces de transportar **audio y vídeo** de forma eficiente, estable y con la menor latencia posible.
 
 En esta memoria se documentan 2 ejercicios del módulo de *Servicios en Red e Internet*:  
