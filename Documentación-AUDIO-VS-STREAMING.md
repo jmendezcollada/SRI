@@ -46,7 +46,7 @@ La documentación se ha elaborado íntegramente en formato Markdown y alojada en
 
 El objetivo de este ejercicio es trabajar con FFmpeg para comprender cómo se analiza, transforma y prepara un vídeo para diferentes escenarios. A lo largo del proceso se realizan tareas como:
 
-    Inspeccionar un archivo de vídeo con ffprobe.
+    1. Inspeccionar un archivo de vídeo con ffprobe.
 
     Cambiar el contenedor sin recodificar (remuxing).
 
