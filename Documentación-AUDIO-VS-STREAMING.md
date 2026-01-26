@@ -76,6 +76,24 @@ Este comando directamente no comprueba que se haya descargado FFmpeg, sino que c
 
 <img width="872" height="485" alt="imagen" src="https://github.com/user-attachments/assets/2fd52559-49ab-4c29-870e-9181fa1b8eab" />
 
+La salida muestra la versión instalada, los códecs soportados y las librerías disponibles. Esto confirma que la herramienta está lista para usarse.
+
+
+#### Descarga del Vídeo Original AULES
+
+El vídeo proporcionado en Aules es un archivo MP4 en resolución 1080p. Una vez descargado, lo colocamos en una carpeta de trabajo.
+
+<img width="636" height="89" alt="imagen" src="https://github.com/user-attachments/assets/b1985a1d-935a-4a37-a6c5-c96752973b38" />
+
+Comprobación del Archivo:
+
+<img width="555" height="56" alt="imagen" src="https://github.com/user-attachments/assets/6d95cf51-4201-4081-8f27-5cbdae1d409d" />
+
+Con este comando verificamos el tamaño del archivo y confirmamos que se descargó correctamente.
+
+
+#### Ánalisis del Vídeo con ffprobe
+
 
 
 
