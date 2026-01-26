@@ -45,18 +45,12 @@ La documentación se ha elaborado íntegramente en formato Markdown y alojada en
 #### Objetivo del Ejercicio
 
 El objetivo de este ejercicio es trabajar con FFmpeg para comprender cómo se analiza, transforma y prepara un vídeo para diferentes escenarios. A lo largo del proceso se realizan tareas como:
-
-    1. Inspeccionar un archivo de vídeo con ffprobe.
-
-    Cambiar el contenedor sin recodificar (remuxing).
-
-    Recodificar el vídeo usando distintos códecs (H.264 y H.265).
-
-    Comparar calidad y tamaño de archivos a igual bitrate.
-
-    Generar perfiles de streaming con distintos bitrates y resoluciones.
-
-    Realizar cálculos de almacenamiento y capacidad de red.
+1. Inspeccionar un archivo de vídeo con ffprobe.
+Cambiar el contenedor sin recodificar (remuxing).
+Recodificar el vídeo usando distintos códecs (H.264 y H.265).
+Comparar calidad y tamaño de archivos a igual bitrate.
+Generar perfiles de streaming con distintos bitrates y resoluciones.
+Realizar cálculos de almacenamiento y capacidad de red.
 
 Este ejercicio permite entender la relación entre códec, contenedor, bitrate, resolución, calidad y uso de recursos.
 
