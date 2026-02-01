@@ -13,11 +13,17 @@
  3. [Ejercicio 2: Procesado y Streaming de Vídeo](#ejercicio-2-procesado-y-streaming-de-vídeo)
     
     3.1 [Objetivo del Ejercicio](#objetivo-del-ejercicio)
+    
     3.2 [Instalación FFmpeg](#instalación-ffmpeg)
+    
     3.3 [Descarga del Vídeo Original AULES](#descarga-del-vídeo-original-aules)
+    
     3.4 [Ánalisis del Vídeo con ffprobe](#análisis-del-vídeo-con-ffprobe)
+    
     3.5 [Remuxing: Cambio de Contenedor (.MP4 -> .MKV).](#remuxing-cambio-de-contenedor-mp4--mkv)
+    
     3.6 [Cambio de Códecs y Comparación](#cambio-de-códecs-y-comparación)
+    
     3.7 [Simulación de Streaming con Diferentes tipos de Fichero.](#simulación-de-streaming-con-diferentes-tipos-de-fichero)
  5. [Anexos](#anexos)
  6. [Comandos Interesantes](#comandosinteresantes)
