@@ -88,6 +88,82 @@ Con este comando verificamos el tamaño del archivo y confirmamos que se descarg
 
 #### Ánalisis del Vídeo con ffprobe
 
+Con el siguiente comando vamos a comprobar cierta información que nos será útil del vídeo:
+```
+ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,bit_rate,sample_rate,channels,duration -of default=noprint_wrappers=1 big-buck-bunny-1080p-30sec.mp4
+```
+codec_name=h264
+width=1920
+height=1080
+r_frame_rate=24/1
+duration=30.000000
+bit_rate=5860720
+codec_name=aac
+sample_rate=48000
+channels=6
+r_frame_rate=0/0
+duration=30.000000
+bit_rate=192580
+
+Ffprobe es fundamental para entender cómo está construido un archivo multimedia antes de modificarlo.
+
+### Remuxing: Cambio de Contenedor (.MP4 -> .MKV).
+
+Con el siguiente comando vamos a hacer un Remuxing, pero antes de nada, voy a explicar que es Remuxing:
+
+El Remuxing consiste en cambiar el contenedor de un archivo de vídeo sin modificar el contenido interno.
+Es decir:
+- No se recodifica el vídeo
+- No se recodifica el audio
+- Solo se “empaqueta” todo dentro de otro contenedor
+Piensa en ello como cambiar una caja sin tocar lo que hay dentro.
+
+**Contenedor vs Códec (la clave para entenderlo)**
+
+- El contenedor es el archivo externo: .mp4, .mkv, .avi, .mov…
+   Su función es guardar dentro los streams de vídeo, audio, subtítulos, metadatos, etc.
+  
+- El códec es la forma en que está comprimido el vídeo o el audio:
+   H.264, H.265, AAC, Opus…
+  
+Cuando haces remuxing:
+- El contenedor cambia (por ejemplo, de .mp4 a .mkv)
+- Los códecs NO cambian (siguen siendo los mismos)
+
+Ahora vamos a pasar con el comando para hacer Remuxing:
+```
+ffmpeg -i original.mp4 -c:v copy -c:a copy salida.mkv
+```
+En mi caso, he usado como entrada el fichero big-buck-bunny-1080p-30sec.mp4, renombrado a original.mp4 para seguir el enunciado.
+
+Explicación del comando
+
+- -i original.mp4: indica el archivo de entrada.
+- -c:v copy: copia el stream de vídeo tal cual, sin recodificar.
+- -c:a copy: copia el stream de audio tal cual, sin recodificar.
+- salida.mkv: es el nuevo archivo, con contenedor MKV.
+  
+Aquí solo cambia el contenedor, no el contenido de vídeo ni de audio.
+
+**Respuestas a las Preguntas**
+
+> **a) ¿Ha cambiado el tamaño de forma significativa?**
+>
+> Podemos usar el comando: **ls -lh original.mp4 salida.mkv** para comprobarlo.
+> ```
+> jaime@jaime-VirtualBox:~/Descargas$ ls -lh original.mp4 salida.mkv
+> -rw-rw-r-- 1 jaime jaime 22M feb  1 18:54 original.mp4
+> -rw-rw-r-- 1 jaime jaime 22M feb  1 18:54 salida.mkv
+> ```
+> No, el tamaño no ha cambiado de forma significativa. El vídeo y el audio son los mismos, solo cambia el contenedor.
+
+> **b) ¿Ha habido carga de CPU? ¿Ha tardado mucho?**
+> Como no se recodifica nada (solo se copian los streams), FFmpeg:
+> - Apenas usa CPU.
+> - Termina el proceso muy rápido, casi instantáneo para un vídeo corto.
+> No ha habido una carga de CPU apreciable y el proceso no ha tardado mucho;
+> el remuxing es muy rápido porque no recodifica.
+
 
 
 
