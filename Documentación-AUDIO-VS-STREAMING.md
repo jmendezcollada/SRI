@@ -11,9 +11,9 @@
  1. [Introducción](#introducción) 
  2. [Ejercicio 1: Radio Online (Audio)](#ejercicio-1-radio-online-audio) 
  3. [Ejercicio 2: Procesado y Streaming de Vídeo](#ejercicio-2-procesado-y-streaming-de-vídeo)
-    3.1 
- 5. [Anexos](#anexos)
- 6. [Comandos Interesantes](#comandosinteresantes)
+    [3.1 Objetivo del Ejercicio](#objetivo-del-ejercicio)
+ 4. [Anexos](#anexos)
+ 5. [Comandos Interesantes](#comandosinteresantes)
 
 
 
