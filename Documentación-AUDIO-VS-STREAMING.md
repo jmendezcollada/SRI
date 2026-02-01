@@ -13,6 +13,12 @@
  3. [Ejercicio 2: Procesado y Streaming de Vídeo](#ejercicio-2-procesado-y-streaming-de-vídeo)
     
     3.1 [Objetivo del Ejercicio](#objetivo-del-ejercicio)
+    3.2 [Instalación FFmpeg](#instalación-ffmpeg)
+    3.3 [Descarga del Vídeo Original AULES](#descarga-del-vídeo-original-aules)
+    3.4 [Ánalisis del Vídeo con ffprobe](#análisis-del-vídeo-con-ffprobe)
+    3.5 [Remuxing: Cambio de Contenedor (.MP4 -> .MKV).](#remuxing-cambio-de-contenedor-mp4--mkv)
+    3.6 [Cambio de Códecs y Comparación](#cambio-de-códecs-y-comparación)
+    3.7 [Simulación de Streaming con Diferentes tipos de Fichero.](#simulación-de-streaming-con-diferentes-tipos-de-fichero)
  5. [Anexos](#anexos)
  6. [Comandos Interesantes](#comandosinteresantes)
 
@@ -111,7 +117,7 @@ ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,bit_r
 
 Ffprobe es fundamental para entender cómo está construido un archivo multimedia antes de modificarlo.
 
-### Remuxing: Cambio de Contenedor (.MP4 -> .MKV).
+#### Remuxing: Cambio de Contenedor (.MP4 -> .MKV).
 
 Con el siguiente comando vamos a hacer un Remuxing, pero antes de nada, voy a explicar que es Remuxing:
 
@@ -122,7 +128,7 @@ Es decir:
 - Solo se “empaqueta” todo dentro de otro contenedor
 Piensa en ello como cambiar una caja sin tocar lo que hay dentro.
 
-**Contenedor vs Códec (la clave para entenderlo)**
+**Contenedor vs Códec**
 
 - El contenedor es el archivo externo: .mp4, .mkv, .avi, .mov…
    Su función es guardar dentro los streams de vídeo, audio, subtítulos, metadatos, etc.
@@ -171,7 +177,7 @@ Aquí solo cambia el contenedor, no el contenido de vídeo ni de audio.
 > el remuxing es muy rápido porque no recodifica.
 
 
-### Cambio de Códecs y Comparación
+#### Cambio de Códecs y Comparación
 
 En esta actividad se recodifica el mismo vídeo usando dos códecs distintos (H.264 y H.265) pero con el mismo bitrate. El objetivo es comparar:
 
@@ -233,7 +239,7 @@ reduce los artefactos.
 > - Cada códec distribuye los bits de forma distinta.
 > - H.265 suele ser más eficiente y a veces genera archivos ligeramente más pequeños, aunque ambos deberían estar muy cerca en tamaño.
 
-### Simulación de Streaming con Diferentes tipos de Fichero.
+#### Simulación de Streaming con Diferentes tipos de Fichero.
 
 En esta actividad se generan dos perfiles de vídeo pensados para distintos tipos de conexión:
 
