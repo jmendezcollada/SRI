@@ -18,7 +18,7 @@
     
     3.3 [Descarga del Vídeo Original AULES](#descarga-del-vídeo-original-aules)
     
-    3.4 [Ánalisis del Vídeo con ffprobe](#análisis-del-vídeo-con-ffprobe)
+    3.4 [Ánalisis del Vídeo con ffprobe](#analisis-del-video-con-ffprobe)
     
     3.5 [Remuxing: Cambio de Contenedor (.MP4 -> .MKV).](#remuxing-cambio-de-contenedor-mp4--mkv)
     
