@@ -11,15 +11,15 @@
  1. [Introducción](#introducción) 
  2. [Ejercicio 1: Radio Online (Audio)](#ejercicio-1-radio-online-audio)
     
-    2.1 [Objetivo del Ejercicio](#objetivo_del_ejercicio)
+    2.1 [Objetivo del Ejercicio](#objetivo-del-ejercicio)
 
-    2.2 [Instalar IceCast2](#instalar_icecast2)
+    2.2 [Instalar IceCast2](#instalar-icecast2)
 
-    2.3 [Aplicación Mixx](#aplicacion_mixx)
+    2.3 [Aplicación Mixx](#aplicacion-mixx)
 
-    2.4 [Aplicación VLC](#aplicacion_vlc)
+    2.4 [Aplicación VLC](#aplicacion-vlc)
 
-    2.5 [Emision en Vivo de Compañero](#emision_en_vivo_de_compañero)
+    2.5 [Emision en Vivo de Compañero](#emision-en-vivo-de-compañero)
     
  3. [Ejercicio 2: Procesado y Streaming de Vídeo](#ejercicio-2-procesado-y-streaming-de-vídeo)
     
