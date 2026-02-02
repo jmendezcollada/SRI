@@ -54,9 +54,9 @@ En esta práctica se trabaja con un entorno real de streaming de audio, utilizan
 El objetivo principal es comprender cómo se estructura un sistema de streaming y cómo se conectan sus componentes.
 
 El flujo de trabajo reproduce el funcionamiento básico de una radio por Internet:
-• 	Un servidor Icecast2 recibe el audio.
-• 	Un cliente DJ (Mixxx) envía la señal al servidor.
-• 	Los oyentes pueden escuchar la emisión desde un navegador o un reproductor como VLC.
+- Un servidor Icecast2 recibe el audio.
+- Un cliente DJ (Mixxx) envía la señal al servidor.
+- Los oyentes pueden escuchar la emisión desde un navegador o un reproductor como VLC.
 
 Además, se practica la configuración de red en máquinas virtuales, aunque en este caso se realizará desde el entorno gráfico de Ubuntu, lo que facilita la asignación de una IP fija y la comprobación de conectividad.
 
@@ -77,20 +77,25 @@ sudo apt install icecast2
 ```
 Cuando ejecutemos el comando de instalación de IceCast nos aparecerá un menú de configuración donde debemos seguir estos pasos para configurarlos correctamente:
 
-Aceptamos para poader configurar manualmente IceCast:
+Aceptamos para poder configurar manualmente IceCast:
+
 <img width="503" height="164" alt="image" src="https://github.com/user-attachments/assets/891af60a-2a46-4d3c-9bbc-cac951322288" />
 
 Dejamos "localhost" asi como está y seguimos:
+
 <img width="536" height="143" alt="image" src="https://github.com/user-attachments/assets/29bdc2ed-bbaf-491b-9f46-c00eead59f0c" />
 
 Ahora nos aparece una pantalla para configurar una contraseña para los recursos de IceCast, en este caso vamos a poner una contraseña sencilla como "1234":
+
 <img width="526" height="138" alt="image" src="https://github.com/user-attachments/assets/688c32f2-6bbe-4dbf-8a5d-b19011203565" />
 
 Y así con las siguientes:
 
 <img width="532" height="140" alt="image" src="https://github.com/user-attachments/assets/a0cbe377-8dc7-4fd4-98ad-a26e2b952078" />
 
+
 <img width="527" height="185" alt="image" src="https://github.com/user-attachments/assets/6183dfdb-5192-4353-9cbd-5ed4ef33032c" />
+
 
 Ya hemos terminado la instalación y configuración de IceCast, ahora pasaremos a la otra máquina que tenemos, nuestra máquina secundaria.
 
@@ -119,21 +124,29 @@ Buscamos con el **Buscador de Aplicaciones** de Ubuntu y ponemos "Mix":
 Ahora vamos a ejecutarla para empezar con los que pide la práctica.
 Vamos a **Opciones** → **Preferencias** y en **Emisión en Vivo** configuramos lo siguiente:
 
+
 <img width="701" height="229" alt="image" src="https://github.com/user-attachments/assets/c58978bc-400c-499b-b6d2-cdd8caec2c24" />
+
 
 Una vez entramos en **Preferencias** vamos a entrar en **Emisión en Vivo** y editamos los siguentes valores para poder configurar la emisión en vivo:
 
+
 <img width="1136" height="525" alt="image" src="https://github.com/user-attachments/assets/b3a6d9cf-1bdf-41ca-a424-08a1a1bfaf80" />
+
 
 Es importante que seleccionemos la opción de **Activar emisión en vivo para aplicar los cambios**, esto lo que hará es que si la configruación esta bien hecha, la emisión en vivo se inciará automáticamente y sabremos que estará correctamente hecha.
 
 Aquí podemos ver que ya estamos en vivo, el botón **ON AIR** en verde significa que ya estamos emitiendo.
 
+
 <img width="484" height="124" alt="image" src="https://github.com/user-attachments/assets/c4d3404f-076f-4fef-a162-e1ddbb1f0b42" />
+
 
 Ahora lo que tenemos que hacer para continuar es descargar de Internet una canción cualquiera para comprobar que cuando ponemos la canción en el **Mixx** vamos a tener que ir a escucharla en la máquina servidor donde hemos instalado IceCast:
 
+
 <img width="1281" height="617" alt="image" src="https://github.com/user-attachments/assets/ff69b500-0f7a-4a0a-9f8c-99397d56f47e" />
+
 
 Aquí tenemos la canción y lo que tenemos que hacer ahora es darle al play para en la máquina servidor se empiece a escuchar.
 
@@ -178,7 +191,7 @@ Y ahora podemos disfrutar de nuestra transmisión en vivo desde la aplicación *
 
 <img width="745" height="567" alt="image" src="https://github.com/user-attachments/assets/b24d1968-535d-48f9-b8f1-78e8b3c637ce" />
 
-#### Emision en Vivio de Compañero
+#### Emision en Vivo de Compañero
 
 Tambien podemos acceder a la radio de algun compañero simplemente poniendo la URL de red como la tiene el, sería cambiando la IP y el /nombre.
 Por ejemplo lo voy a hacer con mi compañero Israel, voy a necesitar poner esta URL de red:
