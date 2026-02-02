@@ -94,6 +94,8 @@ Y así con las siguientes:
 
 Ya hemos terminado la instalación y configuración de IceCast, ahora pasaremos a la otra máquina que tenemos, nuestra máquina secundaria.
 
+#### Aplicación Mixx
+
 En esta máquina lo que vamos a hacer es instalar la aplicación **Mixx**, para ello usaremos distintod comandos:
 
 ```
@@ -162,11 +164,36 @@ Vamos a pasar a la instalación de VLC, para ello vamos a la máquina principal,
 ```
 sudo apt install vlc
 ```
+<img width="269" height="281" alt="image" src="https://github.com/user-attachments/assets/d60c7c0c-c99b-4c5c-935a-3b2241c9bc95" />
 
+Una vez instalada, abrimos la aplicación como hemos hecho con **Mixx** y vamos a **Medio** → **Abrir ubicación de red** y ponemos la dirección **http://192.168.1.100:8000/jaime** y le damos al **PLAY**.
 
-Una vez instalada, abrimos la aplicación como hemos hecho con **Mixx** y vamos a **Medio** → **Abrir ubicación de red** y ponemos la dirección http://192.168.1.100:8000/jaime y le damos a reproducir.
+<img width="434" height="296" alt="image" src="https://github.com/user-attachments/assets/5478d38a-0324-47aa-a396-594a74c7a3c1" />
 
+Ahora colocamos la URL de red que necesitamos, la nuestra es la siguiente:
 
+<img width="400" height="223" alt="image" src="https://github.com/user-attachments/assets/409e531c-3c41-4c5c-9aaa-99b360eaa365" />
+
+Y ahora podemos disfrutar de nuestra transmisión en vivo desde la aplicación **VLC** y poder escuchar nuestras canciones favoritas:
+
+<img width="745" height="567" alt="image" src="https://github.com/user-attachments/assets/b24d1968-535d-48f9-b8f1-78e8b3c637ce" />
+
+#### Emision en Vivio de Compañero
+
+Tambien podemos acceder a la radio de algun compañero simplemente poniendo la URL de red como la tiene el, sería cambiando la IP y el /nombre.
+Por ejemplo lo voy a hacer con mi compañero Israel, voy a necesitar poner esta URL de red:
+```
+http://192.168.1.200:8000/israel
+```
+**En el navegador:**
+
+<img width="905" height="617" alt="image" src="https://github.com/user-attachments/assets/34f2f4ed-5364-4099-bff4-b837dd847b53" />
+
+**En la app VLC:**
+
+<img width="400" height="184" alt="image" src="https://github.com/user-attachments/assets/10b5ea39-9d5a-403c-8be7-6ef9bfa9b2ee" />
+
+<img width="741" height="563" alt="image" src="https://github.com/user-attachments/assets/4b55a317-b268-4060-ae36-deb05edb9f28" />
 
 
 
