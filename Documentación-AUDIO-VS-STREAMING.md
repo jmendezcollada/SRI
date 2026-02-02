@@ -15,9 +15,9 @@
 
     2.2 [Instalar IceCast2](#instalar-icecast2)
 
-    2.3 [Aplicación Mixx](#aplicacion-mixx)
+    2.3 [Aplicación Mixx](#aplicación-mixx)
 
-    2.4 [Aplicación VLC](#aplicacion-vlc)
+    2.4 [Aplicación VLC](#aplicación-vlc)
 
     2.5 [Emision en Vivo de Compañero](#emision-en-vivo-de-compañero)
     
