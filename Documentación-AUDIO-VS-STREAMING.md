@@ -9,7 +9,18 @@
 ## ÍNDICE
 
  1. [Introducción](#introducción) 
- 2. [Ejercicio 1: Radio Online (Audio)](#ejercicio-1-radio-online-audio) 
+ 2. [Ejercicio 1: Radio Online (Audio)](#ejercicio-1-radio-online-audio)
+    
+    2.1 [Objetivo del Ejercicio](#objetivo_del_ejercicio)
+
+    2.2 [Instalar IceCast2](#instalar_icecast2)
+
+    2.3 [Aplicación Mixx](#aplicacion_mixx)
+
+    2.4 [Aplicación VLC](#aplicacion_vlc)
+
+    2.5 [Emision en Vivo de Compañero](#emision_en_vivo_de_compañero)
+    
  3. [Ejercicio 2: Procesado y Streaming de Vídeo](#ejercicio-2-procesado-y-streaming-de-vídeo)
     
     3.1 [Objetivo del Ejercicio](#objetivo-del-ejercicio)
@@ -25,8 +36,8 @@
     3.6 [Cambio de Códecs y Comparación](#cambio-de-códecs-y-comparación)
     
     3.7 [Simulación de Streaming con Diferentes tipos de Fichero.](#simulación-de-streaming-con-diferentes-tipos-de-fichero)
- 5. [Anexos](#anexos)
- 6. [Comandos Interesantes](#comandosinteresantes)
+ 4. [Anexos](#anexos)
+ 5. [Comandos Interesantes](#comandosinteresantes)
 
 
 
@@ -49,6 +60,7 @@ La documentación se ha elaborado íntegramente en formato Markdown y alojada en
 
 ---
 ### EJERCICIO 1: Radio Online (Audio)
+#### Objetivo del Ejercicio
 En esta práctica se trabaja con un entorno real de streaming de audio, utilizando dos máquinas virtuales Ubuntu 24: una actuará como servidor de radio online mediante Icecast2 y la otra funcionará como equipo de DJ utilizando Mixxx como software de emisión. 
 
 El objetivo principal es comprender cómo se estructura un sistema de streaming y cómo se conectan sus componentes.
