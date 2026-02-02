@@ -29,9 +29,9 @@
     
     3.3 [Descarga del Vídeo Original AULES](#descarga-del-vídeo-original-aules)
     
-    3.4 [Ánalisis del Vídeo con ffprobe](#analisis-del-video-con-ffprobe)
+    3.4 [Ánalisis del Vídeo con ffprobe](#ánalisis-del-vídeo-con-ffprobe)
     
-    3.5 [Remuxing: Cambio de Contenedor (.MP4 -> .MKV).](#remuxing-cambio-de-contenedor-mp4--mkv)
+    3.5 [Remuxing: Cambio de Contenedor (.MP4 -> .MKV).](#remuxing-cambio-de-contenedor-mp4-a-mkv)
     
     3.6 [Cambio de Códecs y Comparación](#cambio-de-códecs-y-comparación)
     
@@ -301,7 +301,7 @@ ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,bit_r
 
 Ffprobe es fundamental para entender cómo está construido un archivo multimedia antes de modificarlo.
 
-#### Remuxing: Cambio de Contenedor (.MP4 -> .MKV).
+#### Remuxing: Cambio de Contenedor (.MP4 a .MKV).
 
 Con el siguiente comando vamos a hacer un Remuxing, pero antes de nada, voy a explicar que es Remuxing:
 
