@@ -49,6 +49,81 @@ La documentación se ha elaborado íntegramente en formato Markdown y alojada en
 
 ---
 ### EJERCICIO 1: Radio Online (Audio)
+En esta práctica se trabaja con un entorno real de streaming de audio, utilizando dos máquinas virtuales Ubuntu 24: una actuará como servidor de radio online mediante Icecast2 y la otra funcionará como equipo de DJ utilizando Mixxx como software de emisión. 
+
+El objetivo principal es comprender cómo se estructura un sistema de streaming y cómo se conectan sus componentes.
+
+El flujo de trabajo reproduce el funcionamiento básico de una radio por Internet:
+• 	Un servidor Icecast2 recibe el audio.
+• 	Un cliente DJ (Mixxx) envía la señal al servidor.
+• 	Los oyentes pueden escuchar la emisión desde un navegador o un reproductor como VLC.
+
+Además, se practica la configuración de red en máquinas virtuales, aunque en este caso se realizará desde el entorno gráfico de Ubuntu, lo que facilita la asignación de una IP fija y la comprobación de conectividad.
+
+La práctica finaliza con pruebas de escucha tanto en la máquina anfitriona como en la radio de un compañero, simulando un entorno real de emisión y recepción.
+
+#### Instalar IceCast2
+
+Lo primero que vamos a hacer es empezar por la instalación de IceCast en nuestra máquina principal Ubuntu, esta máquina hará de servidor.
+
+Primero actualizaremos los repositorios del sistema y despues inslaremos IceCast con lo siguientes comandos:
+```
+// Actualizar Repositorios del Sistema
+sudo apt update
+```
+```
+// Instalar IceCast
+sudo apt install icecast2
+```
+Cuando ejecutemos el comando de instalación de IceCast nos aparecerá un menú de configuración donde debemos seguir estos pasos para configurarlos correctamente:
+
+Aceptamos para poader configurar manualmente IceCast:
+<img width="503" height="164" alt="image" src="https://github.com/user-attachments/assets/891af60a-2a46-4d3c-9bbc-cac951322288" />
+
+Dejamos "localhost" asi como está y seguimos:
+<img width="536" height="143" alt="image" src="https://github.com/user-attachments/assets/29bdc2ed-bbaf-491b-9f46-c00eead59f0c" />
+
+Ahora nos aparece una pantalla para configurar una contraseña para los recursos de IceCast, en este caso vamos a poner una contraseña sencilla como "1234":
+<img width="526" height="138" alt="image" src="https://github.com/user-attachments/assets/688c32f2-6bbe-4dbf-8a5d-b19011203565" />
+
+Y así con las siguientes:
+
+<img width="532" height="140" alt="image" src="https://github.com/user-attachments/assets/a0cbe377-8dc7-4fd4-98ad-a26e2b952078" />
+
+<img width="527" height="185" alt="image" src="https://github.com/user-attachments/assets/6183dfdb-5192-4353-9cbd-5ed4ef33032c" />
+
+Ya hemos terminado la instalación y configuración de IceCast, ahora pasaremos a la otra máquina que tenemos, nuestra máquina secundaria.
+
+En esta máquina lo que vamos a hacer es instalar la aplicación **Mixx**, para ello usaremos distintod comandos:
+
+```
+// Añadimos los repositorios necesarios
+sudo add-apt-repository ppa:mixxx/mixxx
+```
+```
+// Actualizamos el sistema y la lista de Paquetes Disponibles
+sudo apt update
+```
+```
+// Instalamos la Aplicación
+sudo apt install mixxx
+```
+
+Una vez hemos ejecutado todos los comandos y no nos ha dado ningun error, la aplicación debería de estar instalada en nuestra máquina.
+Buscamos con el **Buscador de Aplicaciones** de Ubuntu y ponemos "Mix":
+
+<img width="358" height="255" alt="image" src="https://github.com/user-attachments/assets/79d254cc-6941-4daa-b612-ddd89915f5fb" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
