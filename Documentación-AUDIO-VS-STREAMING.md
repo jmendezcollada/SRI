@@ -114,6 +114,57 @@ Buscamos con el **Buscador de Aplicaciones** de Ubuntu y ponemos "Mix":
 
 <img width="358" height="255" alt="image" src="https://github.com/user-attachments/assets/79d254cc-6941-4daa-b612-ddd89915f5fb" />
 
+Ahora vamos a ejecutarla para empezar con los que pide la práctica.
+Vamos a **Opciones** → **Preferencias** y en **Emisión en Vivo** configuramos lo siguiente:
+
+<img width="701" height="229" alt="image" src="https://github.com/user-attachments/assets/c58978bc-400c-499b-b6d2-cdd8caec2c24" />
+
+Una vez entramos en **Preferencias** vamos a entrar en **Emisión en Vivo** y editamos los siguentes valores para poder configurar la emisión en vivo:
+
+<img width="1136" height="525" alt="image" src="https://github.com/user-attachments/assets/b3a6d9cf-1bdf-41ca-a424-08a1a1bfaf80" />
+
+Es importante que seleccionemos la opción de **Activar emisión en vivo para aplicar los cambios**, esto lo que hará es que si la configruación esta bien hecha, la emisión en vivo se inciará automáticamente y sabremos que estará correctamente hecha.
+
+Aquí podemos ver que ya estamos en vivo, el botón **ON AIR** en verde significa que ya estamos emitiendo.
+
+<img width="484" height="124" alt="image" src="https://github.com/user-attachments/assets/c4d3404f-076f-4fef-a162-e1ddbb1f0b42" />
+
+Ahora lo que tenemos que hacer para continuar es descargar de Internet una canción cualquiera para comprobar que cuando ponemos la canción en el **Mixx** vamos a tener que ir a escucharla en la máquina servidor donde hemos instalado IceCast:
+
+<img width="1281" height="617" alt="image" src="https://github.com/user-attachments/assets/ff69b500-0f7a-4a0a-9f8c-99397d56f47e" />
+
+Aquí tenemos la canción y lo que tenemos que hacer ahora es darle al play para en la máquina servidor se empiece a escuchar.
+
+Ahora nos vamos a la otra máquina y tenemos que abir un navegador, en mi caso FireFox.
+Tenemos que poner lo siguiente en la barra de URL para poder acceder a la transmisión en vivo:
+```
+192.168.1.100:8000/jaime
+```
+Aquí ya podemos comprobar que estamos dentro y escuchando la canción que hemos decargado:
+
+<img width="1208" height="522" alt="image" src="https://github.com/user-attachments/assets/a24acdb9-795a-4c14-bf35-1310457791c6" />
+
+#### Aplicación VLC
+
+Ahora vamos a pasar a usar la aplicación VLC.
+
+**VLC (VideoLAN Client)** es un reproductor multimedia gratuito y de código abierto capaz de reproducir prácticamente cualquier formato de audio y vídeo sin necesidad de instalar códecs adicionales. Es conocido por su compatibilidad, su estabilidad y su capacidad para abrir archivos locales, DVDs, streams de Internet y emisiones en directo como las generadas por Icecast.
+
+Entre sus funciones más destacadas:
+- Reproduce casi todos los formatos multimedia.
+- Permite escuchar y ver streaming desde URLs (como http://192.168.1.100:8000/jaime).
+- Funciona en Windows, Linux, macOS, Android y más.
+- Incluye herramientas avanzadas como conversión de formatos, grabación y filtros de audio/vídeo.
+  
+En esta práctica se utiliza VLC para comprobar que la radio Icecast está emitiendo correctamente desde la máquina anfitriona
+
+Vamos a pasar a la instalación de VLC, para ello vamos a la máquina principal, donde tenemos el IceCast y ahi la instalamos, vamos a ejecutar el siguiente comando para hacer la instalación:
+```
+sudo apt install vlc
+```
+
+
+Una vez instalada, abrimos la aplicación como hemos hecho con **Mixx** y vamos a **Medio** → **Abrir ubicación de red** y ponemos la dirección http://192.168.1.100:8000/jaime y le damos a reproducir.
 
 
 
