@@ -10,7 +10,7 @@
 - [QoS: Jitter, Buffer](#qos-jitter-buffer)
 - [Protocolos de streaming](#protocolos-de-streaming)
 - [Códecs](#códecs)
-- [Ejercicios Cálculo](#ejercicios-cáclculo)
+- [Ejercicios Cálculo](#ejercicios-cálculo)
 
 ---
 ## Descarga directa vs Streaming
