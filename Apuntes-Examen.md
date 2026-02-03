@@ -12,8 +12,8 @@
 - [Códecs](#códecs)
 - [Ejercicios Cálculo](#ejercicios-cáclculo)
 
-
-### Descarga directa vs Streaming
+---
+## Descarga directa vs Streaming
 
 #### Descarga directa
 - El usuario demanda un fichero con un peso de **100 MB** y **10 minutos** de duración.
@@ -28,8 +28,8 @@
 - Solo se consume el **ancho de banda que el cliente ha utilizado**  
   (2 minutos según el ejemplo anterior).
 
-
-### Topología de red
+---
+## Topología de red
 
 #### Unicast
 - Conexión **1 a 1** (estándar de internet).
@@ -49,8 +49,8 @@
 - El servidor envía datos a **todos los clientes** de la red.
 
 <img width="607" height="325" alt="image" src="https://github.com/user-attachments/assets/2648b899-b534-476c-a33e-184f238f2858" />
-
-### Capa de transporte: TCP vs UDP
+---
+## Capa de transporte: TCP vs UDP
 
 #### TCP
 - Representado como una persona **bebiendo agua directamente de la botella**.
@@ -79,7 +79,7 @@
 - **TCP = beber de la botella → control, fiabilidad, orden.**
 - **UDP = agua cayendo desde arriba → rapidez, pérdidas, desorden.**
 
-### QoS: Jitter, Buffer
+## QoS: Jitter, Buffer
 
 #### Jitter (Fluctuación)
 Es la variación en el tiempo de llegada de los paquetes.
@@ -99,7 +99,7 @@ Una característica específica de servidores como Icecast.
 - Problema: Al conectarse, el oyente tardaría varios segundos en llenar su buffer a velocidad normal (1x).
 - Solución (Burst): El servidor envía los datos iniciales (ej. 64KB) a la máxima velocidad posible que permita la red (ej. 10x), llenando el buffer del cliente casi instantáneamente para que el audio empiece a sonar de inmediato (**Time-to-first-byte reducido**).
 
-### Protocolos de Streaming
+## Protocolos de Streaming
 
 #### 1. Capa de transporte: TCP vs UDP
 
@@ -193,7 +193,7 @@ NO
 - La radio online también es **TCP** (como Icecast2).
 - Cuando se necesita **interacción en tiempo real**, el delay no es admisible → **UDP**.
 
-### Códecs
+## Códecs
 
 Los códecs son algoritmos que permiten la **compresión y descompresión** de audio/vídeo.  
 Su objetivo es **reducir la cantidad de información a transferir sin perder calidad**.
