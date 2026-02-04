@@ -50,6 +50,7 @@
 - El servidor envía datos a **todos los clientes** de la red.
 
 <img width="607" height="325" alt="image" src="https://github.com/user-attachments/assets/2648b899-b534-476c-a33e-184f238f2858" />
+
 ---
 ## Capa de transporte: TCP vs UDP
 
