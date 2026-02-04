@@ -226,6 +226,9 @@ El audio es una onda analógica. Para digitalizarla, debe **muestrearse**, como 
 
 (La diapositiva muestra ejemplos visuales de muestreo con 10, 6 y 2 puntos.)
 
+<img width="337" height="288" alt="image" src="https://github.com/user-attachments/assets/c3e20812-9624-4cbc-8de3-2d306715b04f" />
+
+
 ---
 
 ### Profundidad de bits (Bit Depth)
@@ -239,6 +242,8 @@ Si la frecuencia de muestreo eran las “fotos”, la profundidad de bits es la 
 
 La diapositiva muestra comparaciones entre 8-bit, 16-bit y señal analógica.
 
+<img width="442" height="250" alt="image" src="https://github.com/user-attachments/assets/dbf15d0b-8dec-493a-9a1b-6fba31fba325" />
+
 ---
 
 ### Canales
@@ -246,6 +251,8 @@ La diapositiva muestra comparaciones entre 8-bit, 16-bit y señal analógica.
 Número de **audios independientes** que viajan en el mismo stream.
 
 La diapositiva muestra un ejemplo de sistema **5.1** (varios canales independientes).
+
+<img width="250" height="333" alt="image" src="https://github.com/user-attachments/assets/96c047ac-2b9e-4168-8a26-368d7c8d1b95" />
 
 ---
 
