@@ -291,20 +291,24 @@ P = 44100 × 16 × 2 × 3 × 60
 ### Ejercicios
 
 1. **Calcula el peso aproximado de un archivo de audio sin compresión (WAV) de 5 minutos, con una frecuencia de muestreo de 44,1 kHz, 16 bits y estéreo.**
+```
   5 min = 300 seg
   44.100 Hz x 16 bits x 2 x 300 = 423.360.000 bits / 8 = 52.920.000 Bytes
   52.920.000 Bytes / 1.000.000 = **52,92 MB**
-  
+```
 2. **Si emitimos un streaming en MP3 a un bitrate constante (CBR) de 128 kbps, ¿cuánto ancho de banda total consumirá el servidor si tiene 25 oyentes simultáneos?**
+```
   128 kbps x 25 oyentes = 3200 Kbps / 1000 = **3,2 Mbps**
-
+```
 3. **Calcula el bitrate de un flujo de audio que utiliza una frecuencia de 48 kHz, 24 bits de profundidad y un solo canal (mono).**
+```
   48.000 Hz x 24 bits x 1 = 1.152.000 b / 1000 = **1.152 kbps**
-
+```
 4. **Tienes un servidor con un límite de subida de 10 Mbps. ¿Cuántos oyentes a 192 kbps puede soportar teóricamente antes de saturar la red?**
+```
   Limtie = 10 Mbps
   10 Mbps x 1000 = 10.000 Kbps / 192 Kbps = 52,08 - **52 oyentes**
-
+```
 ---
 
 ### Cálculo de Peso Vídeo
