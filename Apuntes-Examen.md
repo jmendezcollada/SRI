@@ -356,34 +356,40 @@ C. ¿Qué solución técnica aplicarías para que los 4 puedan emitir sin satura
 
 ### Audio
 1. Peso de un archivo sin compresión (WAV)
-
+```
 Peso(bits) = Frecuencia_de_muestreo × Bits × Canales × Segundos
+```
+```
 Peso(bytes) = Peso(bits) / 8
+```
 
 2. Bitrate de audio sin comprimir
-
+```
 Bitrate = Frecuencia × Bits × Canales
-
+```
 3. Consumo total de ancho de banda en streaming
-
+```
 BW_total = Bitrate_stream × Número_de_oyentes
-
+```
 ### Vídeo
 4. Peso de vídeo sin comprimir
-
+```
 Peso(bits) = (Ancho × Alto) × Profundidad × FPS × Tiempo
+```
+```
 Peso(bytes) = Peso(bits) / 8
+```
 
 5. Peso de vídeo comprimido
-
+```
 Peso = Bitrate × Tiempo
-
+```
 ### Red / Topología
 
 6. Ancho de banda en unicast
-
+```
 BW_total = BW_stream × N_usuarios
-
+```
 
 
 
